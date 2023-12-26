@@ -9,6 +9,7 @@
 #==============================================================================================================
 
 # Installation des dépendance
+
 sudo apt install vim build-essential cmake vim-nox python3-dev
 
 # Copy the vimrc file to ~/.vimrc
