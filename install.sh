@@ -13,7 +13,8 @@ sudo apt install vim build-essential cmake vim-nox python3-dev
 
 # Copy the vimrc file to ~/.vimrc
 # cp -rf ./vimrc ~/.vimrc
-git clone https://raw.githubusercontent.com/alexandre-Maury/vim/main/.vimrc ~/.vimrc
+curl -o ~/.vimrc https://raw.githubusercontent.com/alexandre-Maury/vim/main/.vimrc
+
 
 # Install Vundle with 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
