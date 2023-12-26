@@ -16,15 +16,18 @@ curl -o ~/.vimrc https://raw.githubusercontent.com/alexandre-Maury/vim/main/.vim
 # Install Vundle with 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# Installation des fonts
+git clone https://github.com/alexandre-Maury/vim/tree/fa21c9c0179392c98a4887ab36a5806cdda49c03/fonts ~/.fonts
+
 # Installation des plugins
 vim +PluginInstall +qall
 
-
-
+# Préparation pour le compte root
 sudo cp -rf ~/.vim /root/.vim
 sudo cp -rf ~/.vimrc /root/.vimrc 
 sudo vim +PluginInstall +qall
 
+# Mise ajours des fonts
 fc-cache -fv
 
 printf "%s \\n" "Installation de vim terminer"
