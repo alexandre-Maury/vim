@@ -20,11 +20,10 @@ curl -o ~/.vimrc https://raw.githubusercontent.com/alexandre-Maury/vim/main/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Installation des plugins
-# vim +PluginInstall +qall
+vim +PluginInstall +qall
 
 sudo cp -rf ~/.vim /root/.vim
 sudo cp -rf ~/.vimrc /root/.vimrc 
-
 sudo vim +PluginInstall +qall
 
 printf "%s \\n" "Installation de vim terminer"
