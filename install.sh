@@ -10,7 +10,7 @@
 
 # Installation des dépendance
 
-sudo apt install vim build-essential cmake vim-nox python3-dev
+sudo apt install vim build-essential cmake vim-nox python3-dev curl
 
 # Copy the vimrc file to ~/.vimrc
 curl -o ~/.vimrc https://raw.githubusercontent.com/alexandre-Maury/vim/main/.vimrc
