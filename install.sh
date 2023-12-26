@@ -8,6 +8,8 @@
 # Faire une modification du clonage dans /temp/
 #==============================================================================================================
 
+sudo apt install fonts-powerline
+ 
 # Copy the vimrc file to ~/.vimrc
 curl -o ~/.vimrc https://raw.githubusercontent.com/alexandre-Maury/vim/main/.vimrc
 
