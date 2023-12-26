@@ -21,4 +21,6 @@ vim +PluginInstall +qall
 #sudo cp -rf ~/.vimrc /root/.vimrc 
 #sudo vim +PluginInstall +qall
 
+fc-cache -fv
+
 printf "%s \\n" "Installation de vim terminer"
