@@ -19,9 +19,9 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Installation des plugins
 vim +PluginInstall +qall
 
-#sudo cp -rf ~/.vim /root/.vim
-#sudo cp -rf ~/.vimrc /root/.vimrc 
-#sudo vim +PluginInstall +qall
+sudo cp -rf ~/.vim /root/.vim
+sudo cp -rf ~/.vimrc /root/.vimrc 
+sudo vim +PluginInstall +qall
 
 fc-cache -fv
 
