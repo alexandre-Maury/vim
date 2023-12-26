@@ -8,12 +8,8 @@
 # Faire une modification du clonage dans /temp/
 #==============================================================================================================
 
-# Installation des dépendance
-sudo apt install vim vim-nox python3-dev curl
-
 # Copy the vimrc file to ~/.vimrc
 curl -o ~/.vimrc https://raw.githubusercontent.com/alexandre-Maury/vim/main/.vimrc
-
 
 # Install Vundle with 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
