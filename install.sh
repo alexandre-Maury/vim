@@ -34,10 +34,13 @@ done
 git clone https://github.com/alexandre-Maury/vim.git /tmp/vim
 
 printf "%s %s \\n" "[Succès] Copie du fichier vimrc" "==> $HOME/.vimrc"
-cp /tmp/vim/vimrc ~/.vimrc
+cp -rf /tmp/vim/vimrc ~/.vimrc
 
 printf "%s %s \\n" "[Succès] Copie du dossier des fonts" "==> $HOME/.fonts"
-cp /tmp/vim/fonts ~/.fonts
+cp -rf /tmp/vim/fonts ~/.fonts
+
+# Mise ajours des fonts
+fc-cache -fv
 
 # Install Vundle with 
 printf "%s %s \\n" "[Succès] Copie du Vundle" "==> $HOME/.vim/bundle"
@@ -52,8 +55,5 @@ vim +PluginInstall +qall
 sudo cp -rf ~/.vim /root/.vim
 sudo cp -rf ~/.vimrc /root/.vimrc 
 sudo vim +PluginInstall +qall
-
-# Mise ajours des fonts
-fc-cache -fv
 
 printf "%s \\n" "Installation de vim terminer"
