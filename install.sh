@@ -8,11 +8,7 @@
 # Faire une modification du clonage dans /temp/
 #==============================================================================================================
 
-
-
-
 deps=("fonts-powerline" "vim-nox")
-
 
 # Check les paquets installé et procéde à l'installation de ce manquants
 for dep in "${deps[@]}"; do
@@ -28,9 +24,7 @@ for dep in "${deps[@]}"; do
     fi
 done
  
-
 # Installation des fonts et du fichier vimrc
-# curl -o ~/.vimrc https://raw.githubusercontent.com/alexandre-Maury/vim/main/.vimrc
 git clone https://github.com/alexandre-Maury/vim.git /tmp/vim
 
 printf "%s %s \\n" "[Succès] Copie du fichier vimrc" "==> $HOME/.vimrc"
