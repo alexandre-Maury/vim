@@ -33,6 +33,11 @@ cp -rf /tmp/vim/vimrc ~/.vimrc
 printf "%s %s \\n" "[Succès] Copie du dossier des fonts" "==> $HOME/.fonts"
 cp -rf /tmp/vim/fonts ~/.fonts
 
+# Préparation pour le compte root
+sudo cp -rf ~/.vim /root/.vim
+sudo cp -rf ~/.vimrc /root/.vimrc 
+sudo cp -rf ~/.fonts /root/.fonts
+
 # Mise ajours des fonts
 fc-cache -fv
 
@@ -44,10 +49,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Installation des plugins
 printf "%s %s \\n" "[Succès] Installation des plugins" "==> $HOME/.vim/bundle"
 vim +PluginInstall +qall
-
-# Préparation pour le compte root
-sudo cp -rf ~/.vim /root/.vim
-sudo cp -rf ~/.vimrc /root/.vimrc 
-sudo vim +PluginInstall +qall
+# sudo vim +PluginInstall +qall
 
 printf "%s \\n" "Installation de vim terminer"
