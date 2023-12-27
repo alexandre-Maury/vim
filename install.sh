@@ -48,8 +48,4 @@ cd ~/.vim/bundle/YouCompleteMe/
 sudo pip install cmake 
 python3 install.py 
 
-# Préparation pour le compte root
-export VISUAL=vim
-
-
 printf "%s \\n" "Installation de vim terminer"
