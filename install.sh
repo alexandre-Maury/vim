@@ -37,17 +37,16 @@ cp -rf /tmp/vim/vimrc ~/.vimrc
 printf "%s %s \\n" "[Succès] Copie du dossier des fonts" "==> $HOME/.fonts"
 cp -rf /tmp/vim/fonts ~/.fonts
 
+# Mise ajours des fonts
+fc-cache -fv
+
 # Installation des plugins
 printf "%s %s \\n" "[Succès] Installation des plugins" "==> $HOME/.vim/bundle"
-vim -T $TERM +PluginInstall +qall
+vim -T $TERM +PluginInstall +qall < /dev/null
 
+printf "%s \\n" "Installation de vim terminer"
 # Préparation pour le compte root
 printf "%s \\n" "[Succès] Copie des fichier vers root" 
 sudo cp -rf ~/.vim /root/.vim
 sudo cp -rf ~/.vimrc /root/.vimrc 
 sudo cp -rf ~/.fonts /root/.fonts
-
-# Mise ajours des fonts
-fc-cache -fv
-
-printf "%s \\n" "Installation de vim terminer"
