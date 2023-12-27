@@ -39,7 +39,7 @@ cp -rf /tmp/vim/fonts ~/.fonts
 
 # Installation des plugins
 printf "%s %s \\n" "[Succès] Installation des plugins" "==> $HOME/.vim/bundle"
-vim +PluginInstall +qall
+vim -T $TERM +PluginInstall +qall
 
 # Préparation pour le compte root
 printf "%s \\n" "[Succès] Copie des fichier vers root" 
