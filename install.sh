@@ -10,7 +10,7 @@
 
 # mkdir /home/$USER/.vim && mkdir /home/$USER/.vim/bundle
 
-deps=("fonts-powerline" "vim-nox" "build-essential" "cmake" "python3-dev")
+deps=("fonts-powerline" "vim-nox" "build-essential" "cmake" "python3-dev" "exuberant-ctags")
 
 # Check les paquets installé et procéde à l'installation de ce manquants
 for dep in "${deps[@]}"; do
