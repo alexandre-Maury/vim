@@ -27,10 +27,6 @@ done
 # Install Vundle with 
 printf "%s %s \\n" "[Succès] Copie du Vundle" "==> $HOME/.vim/bundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-# Installation des plugins
-printf "%s %s \\n" "[Succès] Installation des plugins" "==> $HOME/.vim/bundle"
-vim +PluginInstall +qall
  
 # Installation des fonts et du fichier vimrc
 git clone https://github.com/alexandre-Maury/vim.git /tmp/vim
@@ -40,6 +36,10 @@ cp -rf /tmp/vim/vimrc ~/.vimrc
 
 printf "%s %s \\n" "[Succès] Copie du dossier des fonts" "==> $HOME/.fonts"
 cp -rf /tmp/vim/fonts ~/.fonts
+
+# Installation des plugins
+printf "%s %s \\n" "[Succès] Installation des plugins" "==> $HOME/.vim/bundle"
+vim +PluginInstall +qall
 
 # Préparation pour le compte root
 sudo cp -rf ~/.vim /root/.vim
