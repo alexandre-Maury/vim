@@ -42,6 +42,7 @@ printf "%s %s \\n" "[Succès] Installation des plugins" "==> $HOME/.vim/bundle"
 vim +PluginInstall +qall
 
 # Préparation pour le compte root
+printf "%s \\n" "[Succès] Copie des fichier vers root" 
 sudo cp -rf ~/.vim /root/.vim
 sudo cp -rf ~/.vimrc /root/.vimrc 
 sudo cp -rf ~/.fonts /root/.fonts
