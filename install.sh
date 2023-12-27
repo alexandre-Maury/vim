@@ -44,9 +44,15 @@ fc-cache -fv
 printf "%s %s \\n" "[Succès] Installation des plugins" "==> $HOME/.vim/bundle"
 vim -T $TERM +PluginInstall +qall < /dev/null
 
-printf "%s \\n" "Installation de vim terminer"
+cd ~/.vim/bundle/YouCompleteMe/
+sudo pip install cmake 
+python3 install.py 
+
 # Préparation pour le compte root
 printf "%s \\n" "[Succès] Copie des fichier vers root" 
 sudo cp -rf ~/.vim /root/.vim
 sudo cp -rf ~/.vimrc /root/.vimrc 
 sudo cp -rf ~/.fonts /root/.fonts
+
+
+printf "%s \\n" "Installation de vim terminer"
