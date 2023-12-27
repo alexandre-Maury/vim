@@ -48,7 +48,7 @@ fc-cache -fv /home/$USER/.fonts < /dev/null
 printf "%s %s \\n" "[Succès] Installation des plugins" "==> root/.vim/bundle"
 vim -T $TERM +PluginInstall +qall < /dev/null
 
-cd /home/$USER/.vim/bundle/YouCompleteMe/ && pip install --user --upgrade cmake && python3 install.py < /dev/null
+cd /home/$USER/.vim/plugged/YouCompleteMe/ && pip install --user --upgrade cmake && python3 install.py < /dev/null
 
 echo 'export VISUAL=vim' >> ~/.zshrc
 echo 'export VISUAL=vim' >> ~/.bashrc
