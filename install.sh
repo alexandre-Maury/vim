@@ -8,7 +8,7 @@
 # Faire une modification du clonage dans /temp/
 #==============================================================================================================
 
-mkdir /home/$USER/.vim && mkdir /home/$USER/.vim/bundle
+# mkdir /home/$USER/.vim && mkdir /home/$USER/.vim/bundle
 
 deps=("fonts-powerline" "vim-nox" "build-essential" "cmake" "python3-dev")
 
