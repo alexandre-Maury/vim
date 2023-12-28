@@ -224,7 +224,7 @@ nnoremap <leader>f :CtrlP<cr>
 " ------------------------------------------------------------
 
 set ai 
-"set nu                  							" Activer les numéros de ligne
+set nu                  							" Activer les numéros de ligne
 syntax on               							" Activer la coloration syntaxique
 set incsearch           							" Activer la recherche incrémentielle
 set hlsearch            							" Activer la mise en surbrillance de la recherche
